@@ -16,10 +16,6 @@ class WebpackTask extends Elixir.Task {
         super(name, null, paths);
 
         this.options = options;
-
-        if (fs.existsSync('webpack.config.js')) {
-            this.webpackConfig = require(process.cwd()+'/webpack.config.js');
-        }
     }
 
 
@@ -69,7 +65,7 @@ class WebpackTask extends Elixir.Task {
                 assets: false,
                 version: false
             }
-        }, this.webpackConfig, this.options), require('webpack'));
+        }, Elixir.config.webpack, this.options), require('webpack'));
     }
 }
 

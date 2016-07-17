@@ -1,7 +1,7 @@
 {
-  "name": "laravel-elixir-webpack-official",
+  "name": "@positron/elixir-webpack",
   "version": "1.0.2",
-  "description": "Laravel Elixir Webpack integration",
+  "description": "Quorra Elixir Webpack integration",
   "main": "dist/index.js",
   "scripts": {
     "compile": "babel --presets=es2015 -d dist src",
@@ -14,6 +14,9 @@
     "gulp"
   ],
   "author": "Jeffrey Way",
+  "contributors": [
+    "Harish Anchu <harishanchu@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "buble": "^0.12.3",
