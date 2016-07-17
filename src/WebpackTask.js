@@ -65,7 +65,7 @@ class WebpackTask extends Elixir.Task {
                 assets: false,
                 version: false
             }
-        }, Elixir.config.webpack, this.options), require('webpack'));
+        }, Elixir.config.js.webpack, this.options), require('webpack'));
     }
 }
 
